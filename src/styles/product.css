@@ -1,0 +1,128 @@
+#otherImages {
+  display: none;
+}
+#productImageContainer {
+  position: relative;
+}
+#productImageContainer img:not(#previousBtn, #nextBtn) {
+  width: 100%;
+}
+
+#previousBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  background: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+#previousBtn {
+  left: 5%;
+  background-image: url("../assets/icon-previous.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#nextBtn {
+  right: 5%;
+  background-image: url("../assets/icon-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+article#productAbout {
+  margin: 1rem;
+}
+.mb {
+  margin-bottom: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: var(--orange);
+  letter-spacing: 2px;
+}
+article h2 {
+  text-transform: capitalize;
+}
+#productDescription {
+  color: var(--darkGrayishBlue);
+  line-height: 1.4;
+}
+#breakLine {
+  display: block;
+}
+
+/* PRICE SECTION */
+#priceContainer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+#currentPrice {
+  margin-right: 1rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+#discount {
+  display: flex;
+  align-items: center;
+  background: var(--paleOrange);
+  color: var(--orange);
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-weight: bold;
+}
+#previousPrice {
+  text-decoration: line-through;
+  color: var(--darkGrayishBlue);
+}
+
+#quantityContainer {
+  position: relative;
+  background-color: var(--lightGrayishBlue);
+  border-radius: 7px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#minusBtn,
+#plusBtn {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+}
+#minusBtn {
+  left: 5%;
+  background-image: url("../assets/icon-minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#plusBtn {
+  right: 0%;
+  background-image: url("../assets/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#addToCart {
+  width: 100%;
+  color: white;
+  background-color: var(--orange);
+  border-radius: 7px;
+  padding: 10px 0;
+  font-weight: bolder;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

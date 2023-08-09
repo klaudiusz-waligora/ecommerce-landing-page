@@ -1,0 +1,215 @@
+@media (max-width: 1000px) {
+  /* when in mobile view, prevent showing fullscreen gallery when image is clicked */
+  #fullScreenGallery {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header {
+    padding-bottom: 40px;
+  }
+  nav {
+    width: 1050px;
+    margin-left: -50px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+  }
+  nav img {
+    transform: scale(1.3);
+  }
+  #hamburgerIcon {
+    display: none;
+  }
+
+  #cartIcon {
+    transform: scale(1.5);
+    margin-right: 80px;
+  }
+
+  #avatar {
+    transform: scale(2.5);
+    position: relative;
+  }
+  #avatar:hover {
+    outline: 1.5px solid var(--orange);
+    border-radius: 50%;
+  }
+  #desktopNav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    color: var(--darkGrayishBlue);
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  #desktopLogo {
+    margin-right: 50px;
+  }
+  #mobileLogo {
+    display: none;
+  }
+
+  #productImageContainer img#mainImg {
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #productImageContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #otherImages {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  #otherImages img {
+    border-radius: 10px;
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+  }
+
+  #itemContainer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 100px;
+  }
+  #itemContainer button.lrBtn {
+    display: none;
+  }
+  #otherImages .activeImage {
+    outline: 3px solid var(--orange);
+  }
+
+  #itemContainer h3 {
+    font-size: 0.9rem;
+  }
+  #itemContainer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  #itemContainer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  #priceContainer {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  #buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #quantityContainer {
+    width: 40%;
+    padding: 0;
+    margin: 0 auto;
+    height: 60px;
+  }
+  #quantityContainer button {
+    margin: 0 10px;
+  }
+  #quantity {
+    line-height: 3.5;
+    text-align: center;
+  }
+  #cartItems {
+    position: absolute;
+    top: -520px;
+    right: -600px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  }
+  #cartItems.active {
+    top: 120px;
+  }
+  #numberOfItemsInCart {
+    top: 50px;
+  }
+  #emptyCartMsg {
+    margin-top: 20px;
+  }
+  button#addToCart:hover {
+    background-color: hsla(26, 100%, 55%, 60%);
+    transition: 0.3s ease-in-out;
+  }
+
+  li {
+    position: relative;
+  }
+  li:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -42px;
+    left: 0;
+    background-color: var(--orange);
+  }
+
+  .underline:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: -42px;
+    background: var(--orange);
+    height: 3px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .underline:hover:after,
+  .underline:focus:after,
+  .underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+  #fullScreenGallery {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(42, 42, 42, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  #fullScreenImage {
+    display: block;
+    height: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #closeBtn {
+    position: absolute;
+    top: 8%;
+    left: 69.5%;
+    right: 470px;
+    transform: scale(2);
+  }
+}

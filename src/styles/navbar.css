@@ -1,0 +1,149 @@
+#desktopNav {
+  display: none;
+}
+header {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+#cartIcon {
+  position: relative;
+}
+#numberOfItemsInCart {
+  background-color: var(--orange);
+  width: 20px;
+  height: 20px;
+  border-radius: 60%;
+  position: absolute;
+  top: 2px;
+  transform: translateX(10px);
+
+  text-align: center;
+  color: white;
+}
+button #hamburgerIcon {
+  margin-right: 10px;
+}
+
+/* CART SECTION */
+#cartItems {
+  position: absolute;
+  z-index: 10;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+#cartContent {
+  margin: 20px;
+}
+#separator {
+  height: 1px;
+  margin-top: 20px;
+  width: calc(100% + 39px);
+  transform: translateX(-20px);
+  background-color: #ddd;
+}
+#emptyCartMsg {
+  font-size: 1rem;
+  color: var(--darkGrayishBlue);
+  width: 100%;
+  text-align: center;
+  margin-top: 30%;
+}
+
+#notEmptyCartContent img {
+  width: 70%;
+}
+#itemAvatar {
+  flex: 1 3;
+  width: 3%;
+}
+#itemSummary {
+  display: flex;
+  flex-direction: column;
+  flex: 3 1;
+}
+#itemSummary h4 {
+  width: 80%;
+}
+#multipiedPrice {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+#deleteIcon {
+  width: 10%;
+  cursor: pointer;
+}
+
+#notEmptyCartContent {
+  align-items: center;
+  margin-top: 10%;
+}
+
+#checkoutBtn {
+  width: 100%;
+  background-color: var(--orange);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+/* MOBILE MENU SECTION */
+#screenOverlay {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#mobileMenuOverlay {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 66%;
+  height: 100vh;
+  background-color: white;
+}
+#iconClose {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  cursor: pointer;
+}
+
+#mobileNav {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+#mobileNav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--veryDarkBlue);
+  cursor: pointer;
+}
+
+#userMenu {
+  display: flex;
+  gap: 1rem;
+}
+#avatar {
+  width: 25px;
+}
